@@ -7,6 +7,7 @@ Este proyecto es un ejemplo de una aplicación CRUD (Create, Read, Update, Delet
 - Java 17 o superior
 - Maven 3.6.0 o superior
 - Un entorno de desarrollo como IntelliJ IDEA o Eclipse
+- Una cuenta de Cloudinary con sus respectivas credenciales
 
 ## Configuración del Proyecto
 
