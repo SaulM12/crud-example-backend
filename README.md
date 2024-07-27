@@ -1,6 +1,6 @@
 # CRUD Básico en Spring Boot
 
-Este proyecto es un ejemplo de una aplicación CRUD (Create, Read, Update, Delete) utilizando Spring Boot en su última versión. La aplicación permite gestionar una entidad básica llamada `Book` con los atributos `id`, `title`, `author`, `pages`, y `price`.
+Este proyecto es un ejemplo de una aplicación CRUD (Create, Read, Update, Delete) utilizando Spring Boot en su última versión. La aplicación permite gestionar una entidad básica llamada `Book` con los atributos `id`, `title`, `author`, `pages`, `price` e `image`. La imagen que vamos a seleccionar será almacenada en Cloudinary
 
 ## Requisitos
 
@@ -34,55 +34,7 @@ Este proyecto es un ejemplo de una aplicación CRUD (Create, Read, Update, Delet
     mvn spring-boot:run
     ```
 
-## API Endpoints
 
-La aplicación expone los siguientes endpoints REST para gestionar la entidad `Book`:
-
-- **Crear un nuevo libro**
-    ```http
-    POST /book
-    ```
-
-    **Cuerpo de la solicitud:**
-    ```json
-    {
-      "title": "El título del libro",
-      "author": "El autor del libro",
-      "pages": 123,
-      "price": 19.99
-    }
-    ```
-
-- **Obtener todos los libros**
-    ```http
-    GET /book
-    ```
-
-- **Obtener un libro por ID**
-    ```http
-    GET /book/{id}
-    ```
-
-- **Actualizar un libro existente**
-    ```http
-    PUT /book
-    ```
-
-    **Cuerpo de la solicitud:**
-    ```json
-    {
-      "id": 0 
-      "title": "El título actualizado del libro",
-      "author": "El autor actualizado del libro",
-      "pages": 123,
-      "price": 19.99
-    }
-    ```
-
-- **Eliminar un libro**
-    ```http
-    DELETE /book/{id}
-    ```
 
 
 
